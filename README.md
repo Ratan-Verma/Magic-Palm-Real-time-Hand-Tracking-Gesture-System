@@ -1,15 +1,44 @@
-HandFX – Gesture Controlled Magic Shield
+# 🪄 Magic Palm – Real-time Hand Tracking Gesture System
 
-This project uses OpenCV + CVZone hand tracking to create a Doctor Strange style shield effect controlled by your hand in real-time.
+Magic Palm is an AI powered hand tracking project that detects palm movements & gestures in real-time using OpenCV + MediaPipe. It allows gesture based interaction and VFX effects using hand landmarks.
 
-Features
+---
 
-Tracks single or dual hands
+## 🚀 Features
+- Live hand detection from webcam
+- Real-time palm gesture tracking
+- Uses Computer Vision based landmark detection
+- Easy to modify for VFX overlays / gesture control
+- Lightweight + Fast inference
 
-Shield activates when index finger is raised
+---
 
-Shield auto scales based on hand distance from camera
+## 🧠 Tech Stack
+| Component | Used For |
+|----------|----------|
+| Python | Main Programming Language |
+| OpenCV | Video frame input + processing |
+| MediaPipe | Hand landmark detection (21 keypoints) |
+| cvzone | Wrapper for easy gesture handling |
 
-Gesture toggle ON/OFF with two-hand distance
+---
 
-Run Instructions
+## 📁 Project Structure
+Magic Palm/
+│ action.py
+│ effect.mp4
+│ requirements.txt
+│ README.md
+│ details.pdf
+
+
+---
+
+## ▶️ Run Locally
+
+```bash
+pip install -r requirements.txt
+python action.py
+
+Make sure your webcam is connected
+Press Q to quit the execution
